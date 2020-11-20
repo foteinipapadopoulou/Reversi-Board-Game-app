@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,37 +19,111 @@
 
     <com.example.reversi.BoardView
         android:id="@+id/board"
-        android:gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="@dimen/board_height"
+        android:gravity="center"
 
+        >
 
     </com.example.reversi.BoardView>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/vollkorn"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+        />
+
+        <TextView
+            android:id="@+id/computer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/vollkorn"
+            android:gravity="right"
+            android:text="@string/computer_name"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+
+            />
+        />
+
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-       >
+        android:weightSum="1">
 
-        <ImageView
-            android:id="@+id/black_piece"
+        <TextView
+            android:id="@+id/player_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="right"
-            android:src="@drawable/black">
-
-        </ImageView>
-        <ImageView
-            android:id="@+id/white_piece"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/vollkorn"
             android:gravity="left"
-            android:src="@drawable/white">
+            android:textColor="@color/white"
+            android:textSize="39dp"
 
-        </ImageView>
+            />
+        />
+
+        <TextView
+            android:id="@+id/computer_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/vollkorn"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:textSize="39dp" />
+        />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/player_piece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:gravity="left"
+
+            />
+        />
+
+        <ImageView
+            android:id="@+id/computer_piece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:gravity="right" />
+        />
+
+
     </LinearLayout>
 
 

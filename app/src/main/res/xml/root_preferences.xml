@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/profile_header">
+
+        <EditTextPreference
+            app:key="name"
+            app:title="@string/name_title"
+            app:icon="@drawable/ic_action_name"
+            app:dialogIcon="@drawable/ic_action_name"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="white"
+            app:entries="@array/color_entries"
+            app:entryValues="@array/color_values"
+            app:key="piece color"
+            app:title="@string/color_title"
+            app:icon="@drawable/ic_palette"
+            app:dialogIcon="@drawable/ic_palette"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/game_header">
+
+        <SeekBarPreference
+            app:key="difficulty"
+            app:title="@string/Difficulty_title"
+            android:max="10"
+            android:defaultValue="3"
+            android:summary="Level"
+            app:icon="@drawable/ic_star"
+
+            app:showSeekBarValue="true" />
+        <ListPreference
+            app:key="first move"
+            app:title="@string/first_move_title"
+            app:defaultValue="computer"
+            app:entries="@array/players_entries"
+            app:entryValues="@array/players_values"
+            app:icon="@drawable/ic_first_move"
+            app:dialogIcon="@drawable/ic_first_move"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -2,4 +2,19 @@
     <string name="app_name">Reversi</string>
     <string name="settings_name">Settings</string>
     <string name="play_name">Play</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="dialog_title">End of Game </string>
+    <string name="computer_name">Computer</string>
+    <!-- Preference Titles -->
+    <string name="profile_header">Profile</string>
+    <string name="game_header">Game Preferences</string>
+
+    <!-- Profile Preferences -->
+    <string name="name_title">Your name</string>
+    <string name="color_title">Your piece color</string>
+
+    <!-- Game Preferences -->
+    <string name="Difficulty_title">Difficulty</string>
+    <string name="first_move_title">First move</string>
+
 </resources>
