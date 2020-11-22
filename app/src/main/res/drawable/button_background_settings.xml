@@ -6,6 +6,6 @@
     <padding android:right="15pt"></padding>
     <padding android:bottom="2pt"></padding>
     <padding android:top="5pt"></padding>
-    <solid android:color="@color/colorPrimaryOpacity"></solid>
+    <solid android:color="@color/colorPrimaryLightOpacity"></solid>
     <corners android:radius="30dp" />
 </shape>

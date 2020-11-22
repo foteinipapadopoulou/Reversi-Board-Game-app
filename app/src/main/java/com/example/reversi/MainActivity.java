@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Button play_btn = (Button) findViewById(R.id.playButton);
         Button settings_btn = (Button) findViewById(R.id.settingsButton);
 
+        /*Playing Button*/
         play_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /*Settings Button*/
         settings_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

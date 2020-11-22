@@ -55,7 +55,7 @@ public class PlayingActivity extends AppCompatActivity {
         if (name.equals(""))
             name = PLAYER_NAME_ANONYMOUS;
 
-        int depth = sharedPreferences.getInt("difficulty", 0);
+        int depth = sharedPreferences.getInt("difficulty", 3);
         final int color_player = getColorPiece(sharedPreferences.getString("piece color", ""));
         first_move = sharedPreferences.getString("first move", "");
         final int color_computer = getColorPieceComputer(color_player);
@@ -145,6 +145,7 @@ public class PlayingActivity extends AppCompatActivity {
         confirmDialog.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
                 PlayingActivity.super.onBackPressed();
+                finish();
             }
         }).setNegativeButton(android.R.string.no, null).show();
 

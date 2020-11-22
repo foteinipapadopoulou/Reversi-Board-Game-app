@@ -1,5 +1,7 @@
 package com.example.reversi;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -30,6 +32,7 @@ public class Player {
     public Move max_value(GameBoard board, int depth, int a, int b) {
         Random r = new Random();
         if ((board.IsTerminal()) || (depth == maxDepth)) {
+            Log.e("Move", String.valueOf(board.getLastMove().toString()));
             Move lastmove = new Move(board.getLastMove());
             return lastmove;
         }
@@ -129,6 +132,10 @@ public class Player {
 
     public int getDiskType() {
         return diskType;
+    }
+
+    public int getMaxDepth() {
+        return maxDepth;
     }
 
     private int max(int a, int b) {

@@ -5,6 +5,7 @@
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="dialog_title">End of Game </string>
     <string name="computer_name">Computer</string>
+    <string name="player_default_name">Player</string>
     <!-- Preference Titles -->
     <string name="profile_header">Profile</string>
     <string name="game_header">Game Preferences</string>

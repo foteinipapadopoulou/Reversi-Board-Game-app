@@ -25,7 +25,7 @@ public class BoardView extends View {
     private MutableLiveData<String> hasChanged = new MutableLiveData<String>();
     //    Available moves
     private ArrayList<Move> pos_moves;
-    private Move move;
+    private Move move = new Move();
 
     private int cols = 8, rows = 8;
     private int sizeOfTile, pieceRadius, cellPadding;
@@ -283,10 +283,12 @@ public class BoardView extends View {
         start.nextTurn(player, computer, context, this, hasChanged);
         hasChanged.setValue("true");
         refreshCanvas();
-    }
 
+    }
     public void setLastPlayer(int l) {
         start.setLastLetterPlayed(l);
     }
+
+
 }
 

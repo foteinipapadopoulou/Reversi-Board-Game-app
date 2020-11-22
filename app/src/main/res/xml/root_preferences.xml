@@ -6,6 +6,7 @@
         <EditTextPreference
             app:key="name"
             app:title="@string/name_title"
+            android:defaultValue="@string/player_default_name"
             app:icon="@drawable/ic_action_name"
             app:dialogIcon="@drawable/ic_action_name"
             app:useSimpleSummaryProvider="true" />
@@ -28,10 +29,10 @@
             app:key="difficulty"
             app:title="@string/Difficulty_title"
             android:max="10"
+            app:min="1"
             android:defaultValue="3"
             android:summary="Level"
             app:icon="@drawable/ic_star"
-
             app:showSeekBarValue="true" />
         <ListPreference
             app:key="first move"
@@ -42,7 +43,9 @@
             app:icon="@drawable/ic_first_move"
             app:dialogIcon="@drawable/ic_first_move"
             app:useSimpleSummaryProvider="true" />
-
+        <Preference
+            app:key="first_time"
+            app:isPreferenceVisible="false" />
     </PreferenceCategory>
 
 </PreferenceScreen>
